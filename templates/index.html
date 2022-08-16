@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Diaream
+{% endblock %}
+
+{% block main %}
+<div class="nav-item">Your <span class="color main-text">Diarieam</span></div>
+<br>
+    <table class="table table-striped table-color">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Title</th>
+                <th scope="col">How Was Your Day?</th>
+                <th scope="col">Images/Videos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for diary in diaries %}
+                <tr scope="row">
+                    <td>{{ diary["time"] }}</td>
+                    <td>{{ diary["title"] }}</td>
+                    <td>{{ diary["description"] }}</td>
+                    <td>{{ diary["img_url"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

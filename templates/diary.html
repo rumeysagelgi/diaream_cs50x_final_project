@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create a Diaream Page
+{% endblock %}
+
+{% block main %}
+    <form action="/diary" method="post" id="diary">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="time" name="time" type="date">
+        </div>
+        <br>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="title" name="title" placeholder="Write a title for today" type="text">
+        </div>
+        <br>
+        <div class="mb-3">
+            <textarea class="form-control mx-auto w-auto" id="diary" name="description" placeholder="Dear Diaream,"></textarea>
+        </div>
+        <br>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="img_url" name="img_url" placeholder="Insert your images' URLs" type="url">
+        </div>
+        <br>
+        <button class="btn btn-outline-secondary color" type="submit">Save My New Diaream Page</button>
+    </form>
+{% endblock %}
