@@ -23,7 +23,7 @@ Diaream is an online, account based diary application for people who want to kee
 - After we save it, we immediately will see our new diary page (or entry) listed on `Your Diaream` page. When we are done with adding pages into Diaream, we can log out clicking `Log Out` on the menu tab.
 
 
-## Languages & Frameworks used in Diaream
+## Languages & Frameworks used in Diaream:
 - **Python** (for routing, returning apology texts, inserting into and executing from the database)
 
 - **SQL** (for storing users and diary pages)
@@ -37,7 +37,7 @@ Diaream is an online, account based diary application for people who want to kee
 - **Bootstrap** (for page layout, menu tab and table)
 
 
-## Files
+## Files:
 ***app.py:*** Contains `@app.route`s for index, log in, log out, register and diary pages. Returns an apology considering what's wrong if the user doesn't fill requested areas or provide correct information. Also connects the SQL database to the app.
 
 ***helper.py:*** Contains declaration for `apology()` as well as an `escape()` function for escaping special characters in apology texts. Also declares `login_required()` function.
