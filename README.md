@@ -10,6 +10,8 @@ Diaream is an online, account based diary application for people who want to kee
 
 
 ## How to Use Diaream:
+- First of all, we need to go inside the project folder on our terminal and execute `flask run` command.
+
 - When we run the app and click the link, we first encounter a log in page. If we have an account, we immediately can log in and start to write in Diaream. If we don't, we have to click `Create A Diaream Account` located at the menu above and create one for us.
 
 - On `Register` page, we have to provide a username, a password and type the password again and they should match. If we don't meet those criteria, the app won't allow us to create an account and will return an apology text based on what we are missing.
